@@ -1,0 +1,43 @@
+{
+  "name": "setup-script",
+  "version": "1.0.0",
+  "description": "Estudo sobre teste unitário usando Jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "ts-node-dev tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/server/index.ts",
+    "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored"
+  },
+  "keywords": [
+    "Jest",
+    "test"
+  ],
+  "author": "Bryan Marvila",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-typescript": "^7.10.1",
+    "@types/express": "^4.17.12",
+    "@types/jest": "^26.0.23",
+    "@typescript-eslint/eslint-plugin": "^4.26.1",
+    "@typescript-eslint/parser": "^4.26.1",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "eslint": "^7.28.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-vue": "^7.11.1",
+    "jest": "^27.0.4",
+    "ts-jest": "^27.0.3",
+    "ts-node-dev": "^1.1.6",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
